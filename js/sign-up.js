@@ -17,9 +17,10 @@ $(function(){
 }
 
     $('.signup-form').submit(function(){
-        var addr1Input = $('.signup-form input[name="addr-1"]');
+        var signupForm = $(this);
+        var addr1Input = signupForm.find('input[name="addr-1"]');
         var addr1Value = addr1Input.val();
-        var zipInput = $('.signup-form input[name="zip"]');
+        var zipInput = signupForm.find('input[name="zip"]');
         var zipValue = zipInput.val();
         if (addr1Value && addr1Value.trim().length && zipValue && zipValue.trim().length > 0) { 
             return true;
