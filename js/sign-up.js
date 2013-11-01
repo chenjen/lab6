@@ -39,7 +39,7 @@ $(function(){
          $('.cancel-signup-modal').modal();
     }); //cancel-signup click
 
-    //add this at the end of your document ready function
+    
     $('.btn-abandon').click(function(){
         window.location = 'http://www.google.com';
     });
